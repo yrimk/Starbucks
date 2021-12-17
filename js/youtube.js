@@ -1,4 +1,4 @@
-// Youtube IFrame API를 비동기로 로드합니다.
+// Youtube IFrame API를 비동기로 로드
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -18,9 +18,9 @@ function onYouTubePlayerAPIReady() {
       playlist: 'An6LvWQuj_8' // 반복 재생할 유튜브 영상 ID 목록
     },
     events: {
-      // 영상이 준비되었을 때,
+      // 영상이 준비되면
       onReady: function (event) {
-        event.target.mute() // 음소거!
+        event.target.mute() // 음소거
       }
     }
   })
